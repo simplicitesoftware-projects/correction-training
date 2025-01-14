@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<simplicite elements="1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.simplicite.fr/base" xsi:schemaLocation="http://www.simplicite.fr/base https://www.simplicite.io/resources/schemas/base.xsd">
+<object>
+	<name>ObjectFieldArea</name>
+	<action>upsert</action>
+	<data>
+		<ofa_name>TrnOrder-2</ofa_name>
+		<ofa_position>2</ofa_position>
+		<ofa_title>1</ofa_title>
+		<ofa_ui><![CDATA[<div>
+  <div class="field" data-field="trnOrdPrdId"></div>
+  <div class="field" data-field="trnOrdPrdId__trnPrdReference"></div>
+  <div class="field" data-field="trnOrdPrdId__trnPrdPrice"></div>
+  <div class="field" data-field="trnOrdPrdId__trnPrdStock"></div>
+  <div class="field" data-field="trnOrdPrdId__trnPrdName"></div>
+  <div class="field" data-field="trnOrdPrdId__trnPrdPicture"></div>
+</div>]]></ofa_ui>
+		<ofa_icon><![CDATA[[EXPR:[OBJECTICON:TrnProduct]]]]></ofa_icon>
+		<row_module_id.mdl_name>Training</row_module_id.mdl_name>
+	</data>
+</object>
+</simplicite>

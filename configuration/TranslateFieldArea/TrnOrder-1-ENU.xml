@@ -13,7 +13,7 @@
 			</object>
 		</tsl_object>
 		<tsl_lang>ENU</tsl_lang>
-		<tsl_value>TrnOrder-1</tsl_value>
+		<tsl_value>Order</tsl_value>
 		<tsl_plural_value/>
 		<row_module_id.mdl_name>Training</row_module_id.mdl_name>
 	</data>

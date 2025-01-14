@@ -5,7 +5,17 @@
 	<action>upsert</action>
 	<data>
 		<tpl_name>TrnOrder</tpl_name>
-		<tpl_ui><![CDATA[<div class="area" data-area="1"></div>]]></tpl_ui>
+		<tpl_ui><![CDATA[<div>
+  <div class="area" data-area="1"></div>
+  <div class="row">
+    <div class="col-sm-6">
+      <div class="area" data-area="2"></div>
+    </div>
+    <div class="col-sm-6">
+      <div class="area" data-area="3"></div>
+    </div>
+  </div>
+</div>]]></tpl_ui>
 		<tpl_min/>
 		<tpl_image/>
 		<tpl_grid/>

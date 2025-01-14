@@ -330,17 +330,17 @@ paths:
         required: false
       - in: query
         name: trnPrdSupId
-        description: Search filter for Prd sup id
+        description: Search filter for Supplier
         type: string
         required: false
       - in: query
         name: trnPrdSupId__trnSupCode
-        description: Search filter for Prd sup id Code
+        description: Search filter for Supplier Code
         type: string
         required: false
       - in: query
         name: trnPrdSupId__trnSupName
-        description: Search filter for Prd sup id Name
+        description: Search filter for Supplier Name
         type: string
         required: false
       tags:
@@ -968,47 +968,57 @@ paths:
         required: false
       - in: query
         name: trnOrdPrdId
-        description: Search filter for Ord prd id
+        description: Search filter for Product
         type: string
         required: false
       - in: query
         name: trnOrdPrdId__trnPrdReference
-        description: Search filter for Ord prd id Reference
+        description: Search filter for Product Reference
         type: string
         required: false
       - in: query
         name: trnOrdPrdId__trnPrdPrice
-        description: Search filter for Ord prd id Price
+        description: Search filter for Product Price
         type: number
         required: false
       - in: query
         name: trnOrdPrdId__trnPrdStock
-        description: Search filter for Ord prd id Stock
+        description: Search filter for Product Stock
         type: integer
         required: false
       - in: query
         name: trnOrdPrdId__trnPrdName
-        description: Search filter for Ord prd id Name
+        description: Search filter for Product Name
         type: string
         required: false
       - in: query
         name: trnOrdPrdId__trnPrdPicture
-        description: Search filter for Ord prd id Picture
+        description: Search filter for Product Picture
+        type: string
+        required: false
+      - in: query
+        name: trnOrdPrdId__trnPrdSupId
+        description: Search filter for Product Supplier
+        type: string
+        required: false
+      - in: query
+        name: trnOrdPrdId__trnPrdSupId__trnSupCode
+        description: Search filter for Product Supplier Code
         type: string
         required: false
       - in: query
         name: trnOrdCliId
-        description: Search filter for Ord cli id
+        description: Search filter for Client
         type: string
         required: false
       - in: query
         name: trnOrdCliId__trnCliFirstname
-        description: Search filter for Ord cli id Firstname
+        description: Search filter for Client First Name
         type: string
         required: false
       - in: query
         name: trnOrdCliId__trnCliLastname
-        description: Search filter for Ord cli id Lastname
+        description: Search filter for Client Last Name
         type: string
         required: false
       tags:
@@ -1045,6 +1055,7 @@ securityDefinitions:
     type: apiKey
 definitions:
   Error404:
+    description: Not found
     type: object
     properties:
       error:
@@ -1056,56 +1067,75 @@ definitions:
         enum:
         - 404
   ArrayOfTrnProduct:
+    description: List of Products
     type: array
     items:
       $ref: '#/definitions/TrnProduct'
   TrnSupplier:
+    description: |-
+      Supplier:
+
+      Supplier
     type: object
     properties:
       trnSupCode:
         description: Code
         type: string
+        maxLength: 100
       trnSupName:
         description: Name
         type: string
+        maxLength: 100
       trnSupLogo:
         description: Logo
         type: object
       trnSupWeb:
         description: Web
         type: string
+        maxLength: 100
       row_id:
         description: Unique technical row ID
         type: string
+        maxLength: 11
       trnSupPhone:
         description: Phone
         type: string
+        maxLength: 100
   ArrayOfTrnSupplier:
+    description: List of Suppliers
     type: array
     items:
       $ref: '#/definitions/TrnSupplier'
   TrnClient:
+    description: Client
     type: object
     properties:
       trnCliAddress:
         description: Address
         type: string
+        maxLength: 100
       trnCliFirstname:
         description: Firstname
         type: string
+        maxLength: 100
       row_id:
         description: Unique technical row ID
         type: string
+        maxLength: 11
       trnCliMail:
         description: Mail
         type: string
+        maxLength: 100
       trnCliLastname:
         description: Lastname
         type: string
+        maxLength: 100
       trnCliPhone:
         description: Phone
         type: string
+        maxLength: 100
   TrnProduct:
+    description: Product
     type: object
     properties:
       trnPrdPrice:
@@ -1115,30 +1145,38 @@ definitions:
         description: Picture
         type: object
       trnPrdSupId:
-        description: Prd sup id
+        description: Supplier
         type: string
+        maxLength: 11
       trnPrdSupId__trnSupCode:
-        description: Prd sup id Code
+        description: Supplier Code
         type: string
+        maxLength: 100
       trnPrdStock:
         description: Stock
         type: integer
       trnPrdDescription:
         description: Description
         type: string
+        maxLength: 100
       row_id:
         description: Unique technical row ID
         type: string
+        maxLength: 11
       trnPrdReference:
         description: Reference
         type: string
+        maxLength: 100
       trnPrdName:
         description: Name
         type: string
+        maxLength: 100
       trnPrdSupId__trnSupName:
-        description: Prd sup id Name
+        description: Supplier Name
         type: string
+        maxLength: 100
   PublicationResult:
+    description: Publication result
     type: object
     properties:
       mime:
@@ -1148,6 +1186,7 @@ definitions:
         description: Content (plain text or base64 encoded)
         type: string
   PlaceData:
+    description: Place data
     type: object
     properties:
       coord:
@@ -1169,6 +1208,7 @@ definitions:
         description: 'Label #3'
         type: string
   PlaceMapData:
+    description: Places map data
     type: object
     properties:
       places:
@@ -1180,49 +1220,68 @@ definitions:
         description: Name
         type: string
   TrnOrder:
+    description: Order
     type: object
     properties:
       trnOrdPrdId__trnPrdStock:
-        description: Ord prd id Stock
+        description: Product Stock
         type: integer
       trnOrdPrdId__trnPrdPicture:
-        description: Ord prd id Picture
+        description: Product Picture
         type: object
       trnOrdPrdId__trnPrdPrice:
-        description: Ord prd id Price
+        description: Product Price
         type: number
       trnOrdDate:
         description: Date
         type: string
-        example: yyyy-MM-dd HH:mm:ss
+        maxLength: 10
+        example: yyyy-MM-dd
+      trnOrdPrdId__trnPrdSupId__trnSupCode:
+        description: Product Supplier Code
+        type: string
+        maxLength: 100
       trnOrdNumber:
         description: Number
         type: string
+        maxLength: 100
       trnOrdPrdId:
-        description: Ord prd id
+        description: Product
         type: string
+        maxLength: 11
       trnOrdCliId:
-        description: Ord cli id
+        description: Client
         type: string
+        maxLength: 11
       trnOrdQuantity:
         description: Quantity
         type: integer
       trnOrdPrdId__trnPrdName:
-        description: Ord prd id Name
+        description: Product Name
         type: string
+        maxLength: 100
       trnOrdPrdId__trnPrdReference:
-        description: Ord prd id Reference
+        description: Product Reference
         type: string
+        maxLength: 100
+      trnOrdPrdId__trnPrdSupId:
+        description: Product Supplier
+        type: string
+        maxLength: 11
       trnOrdCliId__trnCliFirstname:
-        description: Ord cli id Firstname
+        description: Client First Name
         type: string
+        maxLength: 100
       trnOrdCliId__trnCliLastname:
-        description: Ord cli id Lastname
+        description: Client Last Name
         type: string
+        maxLength: 100
       row_id:
         description: Unique technical row ID
         type: string
+        maxLength: 11
   ActionResult:
+    description: Action result
     type: object
     properties:
       result:
@@ -1235,10 +1294,12 @@ definitions:
         description: Object item with lists of linked objects' items
         type: object
   ArrayOfTrnOrder:
+    description: List of Orders
     type: array
     items:
       $ref: '#/definitions/TrnOrder'
   Error400:
+    description: Bad request
     type: object
     properties:
       error:
@@ -1250,6 +1311,7 @@ definitions:
         enum:
         - 400
   Error401:
+    description: Unauthorized
     type: object
     properties:
       error:
@@ -1261,6 +1323,7 @@ definitions:
         enum:
         - 401
   Error500:
+    description: Internal server error
     type: object
     properties:
       error:
@@ -1272,10 +1335,12 @@ definitions:
         enum:
         - 500
   ArrayOfTrnClient:
+    description: List of Clients
     type: array
     items:
       $ref: '#/definitions/TrnClient'
   Error403:
+    description: Forbidden
     type: object
     properties:
       error:
