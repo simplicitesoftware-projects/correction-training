@@ -28,7 +28,7 @@
 		<obf_fld_dfault/>
 		<obf_fld_exportable/>
 		<obf_fld_uk/>
-		<obf_area_id.ofa_name>TrnOrder-1</obf_area_id.ofa_name>
+		<obf_area_id.ofa_name>TrnOrder-3</obf_area_id.ofa_name>
 		<row_module_id.mdl_name>Training</row_module_id.mdl_name>
 		<obf_joined_id.obf_object_id.obo_name>TrnOrder</obf_joined_id.obf_object_id.obo_name>
 		<obf_joined_id.obf_field_id.fld_name>trnOrdCliId</obf_joined_id.obf_field_id.fld_name>

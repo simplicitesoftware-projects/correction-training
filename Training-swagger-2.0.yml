@@ -330,17 +330,17 @@ paths:
         required: false
       - in: query
         name: trnPrdSupId
-        description: Search filter for Prd sup id
+        description: Search filter for Supplier
         type: string
         required: false
       - in: query
         name: trnPrdSupId__trnSupCode
-        description: Search filter for Prd sup id Code
+        description: Search filter for Supplier Code
         type: string
         required: false
       - in: query
         name: trnPrdSupId__trnSupName
-        description: Search filter for Prd sup id Name
+        description: Search filter for Supplier Name
         type: string
         required: false
       tags:
@@ -968,47 +968,47 @@ paths:
         required: false
       - in: query
         name: trnOrdPrdId
-        description: Search filter for Ord prd id
+        description: Search filter for Product
         type: string
         required: false
       - in: query
         name: trnOrdPrdId__trnPrdReference
-        description: Search filter for Ord prd id Reference
+        description: Search filter for Product Reference
         type: string
         required: false
       - in: query
         name: trnOrdPrdId__trnPrdPrice
-        description: Search filter for Ord prd id Price
+        description: Search filter for Product Price
         type: number
         required: false
       - in: query
         name: trnOrdPrdId__trnPrdStock
-        description: Search filter for Ord prd id Stock
+        description: Search filter for Product Stock
         type: integer
         required: false
       - in: query
         name: trnOrdPrdId__trnPrdName
-        description: Search filter for Ord prd id Name
+        description: Search filter for Product Name
         type: string
         required: false
       - in: query
         name: trnOrdPrdId__trnPrdPicture
-        description: Search filter for Ord prd id Picture
+        description: Search filter for Product Picture
         type: string
         required: false
       - in: query
         name: trnOrdCliId
-        description: Search filter for Ord cli id
+        description: Search filter for Client
         type: string
         required: false
       - in: query
         name: trnOrdCliId__trnCliFirstname
-        description: Search filter for Ord cli id Firstname
+        description: Search filter for Client Firstname
         type: string
         required: false
       - in: query
         name: trnOrdCliId__trnCliLastname
-        description: Search filter for Ord cli id Lastname
+        description: Search filter for Client Lastname
         type: string
         required: false
       tags:
@@ -1115,10 +1115,10 @@ definitions:
         description: Picture
         type: object
       trnPrdSupId:
-        description: Prd sup id
+        description: Supplier
         type: string
       trnPrdSupId__trnSupCode:
-        description: Prd sup id Code
+        description: Supplier Code
         type: string
       trnPrdStock:
         description: Stock
@@ -1136,7 +1136,7 @@ definitions:
         description: Name
         type: string
       trnPrdSupId__trnSupName:
-        description: Prd sup id Name
+        description: Supplier Name
         type: string
   PublicationResult:
     type: object
@@ -1183,13 +1183,13 @@ definitions:
     type: object
     properties:
       trnOrdPrdId__trnPrdStock:
-        description: Ord prd id Stock
+        description: Product Stock
         type: integer
       trnOrdPrdId__trnPrdPicture:
-        description: Ord prd id Picture
+        description: Product Picture
         type: object
       trnOrdPrdId__trnPrdPrice:
-        description: Ord prd id Price
+        description: Product Price
         type: number
       trnOrdDate:
         description: Date
@@ -1199,25 +1199,25 @@ definitions:
         description: Number
         type: string
       trnOrdPrdId:
-        description: Ord prd id
+        description: Product
         type: string
       trnOrdCliId:
-        description: Ord cli id
+        description: Client
         type: string
       trnOrdQuantity:
         description: Quantity
         type: integer
       trnOrdPrdId__trnPrdName:
-        description: Ord prd id Name
+        description: Product Name
         type: string
       trnOrdPrdId__trnPrdReference:
-        description: Ord prd id Reference
+        description: Product Reference
         type: string
       trnOrdCliId__trnCliFirstname:
-        description: Ord cli id Firstname
+        description: Client Firstname
         type: string
       trnOrdCliId__trnCliLastname:
-        description: Ord cli id Lastname
+        description: Client Lastname
         type: string
       row_id:
         description: Unique technical row ID
