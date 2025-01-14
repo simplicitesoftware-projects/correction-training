@@ -40,6 +40,15 @@ Training module
 | `trnOrdNumber`                                               | char(100)                                | yes*     | yes       |          | -                                                                                |
 | `trnOrdQuantity`                                             | int(100)                                 | yes      | yes       |          | -                                                                                |
 | `trnOrdDate`                                                 | datetime                                 |          | yes       |          | -                                                                                |
+| `trnOrdPrdId` link to **`TrnProduct`**                       | id                                       |          | yes       |          | -                                                                                |
+| _Ref. `trnOrdPrdId.trnPrdReference`_                         | _char(100)_                              |          |           |          | -                                                                                |
+| _Ref. `trnOrdPrdId.trnPrdPrice`_                             | _float(100, 2)_                          |          |           |          | -                                                                                |
+| _Ref. `trnOrdPrdId.trnPrdStock`_                             | _int(100)_                               |          |           |          | -                                                                                |
+| _Ref. `trnOrdPrdId.trnPrdName`_                              | _char(100)_                              |          |           |          | -                                                                                |
+| _Ref. `trnOrdPrdId.trnPrdPicture`_                           | _image_                                  |          |           |          | -                                                                                |
+| `trnOrdCliId` link to **`TrnClient`**                        | id                                       |          | yes       |          | -                                                                                |
+| _Ref. `trnOrdCliId.trnCliFirstname`_                         | _char(100)_                              |          |           |          | -                                                                                |
+| _Ref. `trnOrdCliId.trnCliLastname`_                          | _char(100)_                              |          |           |          | -                                                                                |
 
 `TrnProduct` business object definition
 ---------------------------------------
@@ -56,6 +65,9 @@ Training module
 | `trnPrdName`                                                 | char(100)                                |          | yes       |          | -                                                                                |
 | `trnPrdDescription`                                          | text(100)                                |          | yes       |          | -                                                                                |
 | `trnPrdPicture`                                              | image                                    |          | yes       |          | -                                                                                |
+| `trnPrdSupId` link to **`TrnSupplier`**                      | id                                       |          | yes       |          | -                                                                                |
+| _Ref. `trnPrdSupId.trnSupCode`_                              | _char(100)_                              |          |           |          | -                                                                                |
+| _Ref. `trnPrdSupId.trnSupName`_                              | _char(100)_                              |          |           |          | -                                                                                |
 
 `TrnSupplier` business object definition
 ----------------------------------------

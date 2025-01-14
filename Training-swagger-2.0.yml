@@ -328,6 +328,21 @@ paths:
         description: Search filter for Picture
         type: string
         required: false
+      - in: query
+        name: trnPrdSupId
+        description: Search filter for Prd sup id
+        type: string
+        required: false
+      - in: query
+        name: trnPrdSupId__trnSupCode
+        description: Search filter for Prd sup id Code
+        type: string
+        required: false
+      - in: query
+        name: trnPrdSupId__trnSupName
+        description: Search filter for Prd sup id Name
+        type: string
+        required: false
       tags:
       - TrnProduct
   /rest/TrnSupplier/{row_id}:
@@ -951,6 +966,51 @@ paths:
         description: Search filter for Date
         type: string
         required: false
+      - in: query
+        name: trnOrdPrdId
+        description: Search filter for Ord prd id
+        type: string
+        required: false
+      - in: query
+        name: trnOrdPrdId__trnPrdReference
+        description: Search filter for Ord prd id Reference
+        type: string
+        required: false
+      - in: query
+        name: trnOrdPrdId__trnPrdPrice
+        description: Search filter for Ord prd id Price
+        type: number
+        required: false
+      - in: query
+        name: trnOrdPrdId__trnPrdStock
+        description: Search filter for Ord prd id Stock
+        type: integer
+        required: false
+      - in: query
+        name: trnOrdPrdId__trnPrdName
+        description: Search filter for Ord prd id Name
+        type: string
+        required: false
+      - in: query
+        name: trnOrdPrdId__trnPrdPicture
+        description: Search filter for Ord prd id Picture
+        type: string
+        required: false
+      - in: query
+        name: trnOrdCliId
+        description: Search filter for Ord cli id
+        type: string
+        required: false
+      - in: query
+        name: trnOrdCliId__trnCliFirstname
+        description: Search filter for Ord cli id Firstname
+        type: string
+        required: false
+      - in: query
+        name: trnOrdCliId__trnCliLastname
+        description: Search filter for Ord cli id Lastname
+        type: string
+        required: false
       tags:
       - TrnOrder
   /:
@@ -1054,6 +1114,12 @@ definitions:
       trnPrdPicture:
         description: Picture
         type: object
+      trnPrdSupId:
+        description: Prd sup id
+        type: string
+      trnPrdSupId__trnSupCode:
+        description: Prd sup id Code
+        type: string
       trnPrdStock:
         description: Stock
         type: integer
@@ -1068,6 +1134,9 @@ definitions:
         type: string
       trnPrdName:
         description: Name
+        type: string
+      trnPrdSupId__trnSupName:
+        description: Prd sup id Name
         type: string
   PublicationResult:
     type: object
@@ -1113,19 +1182,46 @@ definitions:
   TrnOrder:
     type: object
     properties:
+      trnOrdPrdId__trnPrdStock:
+        description: Ord prd id Stock
+        type: integer
+      trnOrdPrdId__trnPrdPicture:
+        description: Ord prd id Picture
+        type: object
+      trnOrdPrdId__trnPrdPrice:
+        description: Ord prd id Price
+        type: number
       trnOrdDate:
         description: Date
         type: string
         example: yyyy-MM-dd HH:mm:ss
-      row_id:
-        description: Unique technical row ID
-        type: string
       trnOrdNumber:
         description: Number
+        type: string
+      trnOrdPrdId:
+        description: Ord prd id
+        type: string
+      trnOrdCliId:
+        description: Ord cli id
         type: string
       trnOrdQuantity:
         description: Quantity
         type: integer
+      trnOrdPrdId__trnPrdName:
+        description: Ord prd id Name
+        type: string
+      trnOrdPrdId__trnPrdReference:
+        description: Ord prd id Reference
+        type: string
+      trnOrdCliId__trnCliFirstname:
+        description: Ord cli id Firstname
+        type: string
+      trnOrdCliId__trnCliLastname:
+        description: Ord cli id Lastname
+        type: string
+      row_id:
+        description: Unique technical row ID
+        type: string
   ActionResult:
     type: object
     properties:

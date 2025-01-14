@@ -75,6 +75,12 @@ components:
         trnPrdPicture:
           description: Picture
           type: object
+        trnPrdSupId:
+          description: Prd sup id
+          type: string
+        trnPrdSupId__trnSupCode:
+          description: Prd sup id Code
+          type: string
         trnPrdStock:
           description: Stock
           type: integer
@@ -89,6 +95,9 @@ components:
           type: string
         trnPrdName:
           description: Name
+          type: string
+        trnPrdSupId__trnSupName:
+          description: Prd sup id Name
           type: string
     PublicationResult:
       type: object
@@ -134,19 +143,46 @@ components:
     TrnOrder:
       type: object
       properties:
+        trnOrdPrdId__trnPrdStock:
+          description: Ord prd id Stock
+          type: integer
+        trnOrdPrdId__trnPrdPicture:
+          description: Ord prd id Picture
+          type: object
+        trnOrdPrdId__trnPrdPrice:
+          description: Ord prd id Price
+          type: number
         trnOrdDate:
           description: Date
           type: string
           example: yyyy-MM-dd HH:mm:ss
-        row_id:
-          description: Unique technical row ID
-          type: string
         trnOrdNumber:
           description: Number
+          type: string
+        trnOrdPrdId:
+          description: Ord prd id
+          type: string
+        trnOrdCliId:
+          description: Ord cli id
           type: string
         trnOrdQuantity:
           description: Quantity
           type: integer
+        trnOrdPrdId__trnPrdName:
+          description: Ord prd id Name
+          type: string
+        trnOrdPrdId__trnPrdReference:
+          description: Ord prd id Reference
+          type: string
+        trnOrdCliId__trnCliFirstname:
+          description: Ord cli id Firstname
+          type: string
+        trnOrdCliId__trnCliLastname:
+          description: Ord cli id Lastname
+          type: string
+        row_id:
+          description: Unique technical row ID
+          type: string
     ActionResult:
       type: object
       properties:
@@ -606,6 +642,24 @@ paths:
         in: query
         name: trnPrdPicture
         description: Search filter for Picture
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: trnPrdSupId
+        description: Search filter for Prd sup id
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: trnPrdSupId__trnSupCode
+        description: Search filter for Prd sup id Code
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: trnPrdSupId__trnSupName
+        description: Search filter for Prd sup id Name
         required: false
       tags:
       - TrnProduct
@@ -1352,6 +1406,60 @@ paths:
         in: query
         name: trnOrdDate
         description: Search filter for Date
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: trnOrdPrdId
+        description: Search filter for Ord prd id
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: trnOrdPrdId__trnPrdReference
+        description: Search filter for Ord prd id Reference
+        required: false
+      - schema:
+          type: number
+        in: query
+        name: trnOrdPrdId__trnPrdPrice
+        description: Search filter for Ord prd id Price
+        required: false
+      - schema:
+          type: integer
+        in: query
+        name: trnOrdPrdId__trnPrdStock
+        description: Search filter for Ord prd id Stock
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: trnOrdPrdId__trnPrdName
+        description: Search filter for Ord prd id Name
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: trnOrdPrdId__trnPrdPicture
+        description: Search filter for Ord prd id Picture
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: trnOrdCliId
+        description: Search filter for Ord cli id
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: trnOrdCliId__trnCliFirstname
+        description: Search filter for Ord cli id Firstname
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: trnOrdCliId__trnCliLastname
+        description: Search filter for Ord cli id Lastname
         required: false
       tags:
       - TrnOrder
