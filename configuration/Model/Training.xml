@@ -8,7 +8,7 @@
 		<mod_template_id.mtp_name>ModelBusinessObject</mod_template_id.mtp_name>
 		<mod_json/>
 		<mod_doc>files/Model/Training.svg</mod_doc>
-		<mod_image/>
+		<mod_image>files/Model/Training.png</mod_image>
 		<row_module_id.mdl_name>Training</row_module_id.mdl_name>
 	</data>
 </object>
