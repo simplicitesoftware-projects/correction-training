@@ -1,8 +1,8 @@
 {
-    "date": "2025-01-14 18:16:55",
+    "date": "2025-01-14 18:36:34",
     "name": "Training",
     "format": "xml",
-    "files": ["Training.xml"],
+    "files": ["configuration/**.xml"],
     "repository": {},
     "version": "1",
     "platform": "6.1.19"
