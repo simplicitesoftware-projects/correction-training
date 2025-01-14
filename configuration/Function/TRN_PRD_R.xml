@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<simplicite elements="1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.simplicite.fr/base" xsi:schemaLocation="http://www.simplicite.fr/base https://www.simplicite.io/resources/schemas/base.xsd">
+<object>
+	<name>Function</name>
+	<action>upsert</action>
+	<data>
+		<fct_name>TRN_PRD_R</fct_name>
+		<fct_object_id.obo_name>TrnProduct</fct_object_id.obo_name>
+		<fct_function>L</fct_function>
+		<fct_action_id.act_name/>
+		<fct_view_id.viw_name/>
+		<row_module_id.mdl_name>Training</row_module_id.mdl_name>
+	</data>
+</object>
+</simplicite>

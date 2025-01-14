@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<simplicite elements="1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.simplicite.fr/base" xsi:schemaLocation="http://www.simplicite.fr/base https://www.simplicite.io/resources/schemas/base.xsd">
+<object>
+	<name>Domain</name>
+	<action>upsert</action>
+	<data>
+		<obd_name>TrnDomain</obd_name>
+		<obd_comment/>
+		<obd_type>D</obd_type>
+		<obd_view_id.viw_name/>
+		<obd_nohome>1</obd_nohome>
+		<obd_icon>work</obd_icon>
+		<obd_order/>
+		<obd_domain_id.obd_name/>
+		<row_module_id.mdl_name>Training</row_module_id.mdl_name>
+	</data>
+</object>
+</simplicite>
