@@ -13,6 +13,40 @@
 
 Training module
 
+`TrnSupplier` business object definition
+----------------------------------------
+
+Supplier
+
+### Fields
+
+| Name                                                         | Type                                     | Required | Updatable | Personal | Description                                                                      |
+|--------------------------------------------------------------|------------------------------------------|----------|-----------|----------|----------------------------------------------------------------------------------|
+| `trnSupCode`                                                 | char(100)                                | yes*     | yes       |          | -                                                                                |
+| `trnSupName`                                                 | char(100)                                |          | yes       |          | -                                                                                |
+| `trnSupPhone`                                                | phone(100)                               |          | yes       |          | -                                                                                |
+| `trnSupLogo`                                                 | image                                    |          | yes       |          | -                                                                                |
+| `trnSupWeb`                                                  | url(100)                                 |          | yes       |          | -                                                                                |
+
+`TrnProduct` business object definition
+---------------------------------------
+
+
+
+### Fields
+
+| Name                                                         | Type                                     | Required | Updatable | Personal | Description                                                                      |
+|--------------------------------------------------------------|------------------------------------------|----------|-----------|----------|----------------------------------------------------------------------------------|
+| `trnPrdReference`                                            | char(100)                                | yes*     | yes       |          | -                                                                                |
+| `trnPrdPrice`                                                | float(100, 2)                            | yes      | yes       |          | -                                                                                |
+| `trnPrdStock`                                                | int(100)                                 |          | yes       |          | -                                                                                |
+| `trnPrdName`                                                 | char(100)                                |          | yes       |          | -                                                                                |
+| `trnPrdDescription`                                          | text(100)                                |          | yes       |          | -                                                                                |
+| `trnPrdPicture`                                              | image                                    |          | yes       |          | -                                                                                |
+| `trnPrdSupId` link to **`TrnSupplier`**                      | id                                       |          | yes       |          | -                                                                                |
+| _Ref. `trnPrdSupId.trnSupCode`_                              | _char(100)_                              |          |           |          | -                                                                                |
+| _Ref. `trnPrdSupId.trnSupName`_                              | _char(100)_                              |          |           |          | -                                                                                |
+
 `TrnClient` business object definition
 --------------------------------------
 
@@ -49,38 +83,4 @@ Training module
 | `trnOrdCliId` link to **`TrnClient`**                        | id                                       |          | yes       |          | -                                                                                |
 | _Ref. `trnOrdCliId.trnCliFirstname`_                         | _char(100)_                              |          |           |          | -                                                                                |
 | _Ref. `trnOrdCliId.trnCliLastname`_                          | _char(100)_                              |          |           |          | -                                                                                |
-
-`TrnProduct` business object definition
----------------------------------------
-
-
-
-### Fields
-
-| Name                                                         | Type                                     | Required | Updatable | Personal | Description                                                                      |
-|--------------------------------------------------------------|------------------------------------------|----------|-----------|----------|----------------------------------------------------------------------------------|
-| `trnPrdReference`                                            | char(100)                                | yes*     | yes       |          | -                                                                                |
-| `trnPrdPrice`                                                | float(100, 2)                            | yes      | yes       |          | -                                                                                |
-| `trnPrdStock`                                                | int(100)                                 |          | yes       |          | -                                                                                |
-| `trnPrdName`                                                 | char(100)                                |          | yes       |          | -                                                                                |
-| `trnPrdDescription`                                          | text(100)                                |          | yes       |          | -                                                                                |
-| `trnPrdPicture`                                              | image                                    |          | yes       |          | -                                                                                |
-| `trnPrdSupId` link to **`TrnSupplier`**                      | id                                       |          | yes       |          | -                                                                                |
-| _Ref. `trnPrdSupId.trnSupCode`_                              | _char(100)_                              |          |           |          | -                                                                                |
-| _Ref. `trnPrdSupId.trnSupName`_                              | _char(100)_                              |          |           |          | -                                                                                |
-
-`TrnSupplier` business object definition
-----------------------------------------
-
-Supplier
-
-### Fields
-
-| Name                                                         | Type                                     | Required | Updatable | Personal | Description                                                                      |
-|--------------------------------------------------------------|------------------------------------------|----------|-----------|----------|----------------------------------------------------------------------------------|
-| `trnSupCode`                                                 | char(100)                                | yes*     | yes       |          | -                                                                                |
-| `trnSupName`                                                 | char(100)                                |          | yes       |          | -                                                                                |
-| `trnSupPhone`                                                | phone(100)                               |          | yes       |          | -                                                                                |
-| `trnSupLogo`                                                 | image                                    |          | yes       |          | -                                                                                |
-| `trnSupWeb`                                                  | url(100)                                 |          | yes       |          | -                                                                                |
 

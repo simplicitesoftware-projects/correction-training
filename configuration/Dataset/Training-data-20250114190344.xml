@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<simplicite elements="1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.simplicite.fr/base" xsi:schemaLocation="http://www.simplicite.fr/base https://www.simplicite.io/resources/schemas/base.xsd">
+<object>
+	<name>Dataset</name>
+	<action>upsert</action>
+	<data>
+		<row_module_id.mdl_name>Training</row_module_id.mdl_name>
+		<dt_name>Training-data-20250114190344</dt_name>
+		<dt_file>data/Training-data-20250114190344.zip</dt_file>
+		<dt_desc><![CDATA[Created by module's data export on 2025-01-14 19:03:44]]></dt_desc>
+	</data>
+</object>
+</simplicite>
