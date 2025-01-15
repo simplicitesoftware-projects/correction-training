@@ -159,6 +159,14 @@ components:
         trnOrdNumber:
           description: Number
           type: string
+        trnOrdState:
+          description: State
+          type: string
+          enum:
+          - PROCESSING
+          - VALIDATED
+          - CANCELED
+          - SENT
         trnOrdPrdId:
           description: Product
           type: string
@@ -1391,6 +1399,20 @@ paths:
         required: false
       - schema:
           type: string
+          enum:
+          - TrnTcOrders
+        in: query
+        name: _crosstab
+        description: Apply pivot table
+        required: false
+      - schema:
+          type: boolean
+        in: query
+        name: _crosstabcubes
+        description: Pivot table data as cubes?
+        required: false
+      - schema:
+          type: string
         in: query
         name: trnOrdNumber
         description: Search filter for Number
@@ -1460,6 +1482,17 @@ paths:
         in: query
         name: trnOrdCliId__trnCliLastname
         description: Search filter for Client Lastname
+        required: false
+      - schema:
+          type: string
+          enum:
+          - PROCESSING
+          - VALIDATED
+          - CANCELED
+          - SENT
+        in: query
+        name: trnOrdState
+        description: Search filter for State
         required: false
       tags:
       - TrnOrder

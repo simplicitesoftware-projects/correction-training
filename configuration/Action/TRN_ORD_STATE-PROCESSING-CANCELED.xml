@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<simplicite elements="1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.simplicite.fr/base" xsi:schemaLocation="http://www.simplicite.fr/base https://www.simplicite.io/resources/schemas/base.xsd">
+<object>
+	<name>Action</name>
+	<action>upsert</action>
+	<data>
+		<act_name>TRN_ORD_STATE-PROCESSING-CANCELED</act_name>
+		<act_type>O</act_type>
+		<act_async>0</act_async>
+		<act_job_depth/>
+		<act_method/>
+		<act_script/>
+		<act_url/>
+		<act_confirm>1</act_confirm>
+		<act_confirm_expr/>
+		<act_confirm_ui/>
+		<act_plus/>
+		<act_comment><![CDATA[Transition]]></act_comment>
+		<row_module_id.mdl_name>Training</row_module_id.mdl_name>
+		<act_exec/>
+		<act_count/>
+		<act_order/>
+		<act_color/>
+		<act_color_bg/>
+		<act_image/>
+		<act_group_id.acg_name/>
+		<act_queue_id.acq_name/>
+	</data>
+</object>
+</simplicite>

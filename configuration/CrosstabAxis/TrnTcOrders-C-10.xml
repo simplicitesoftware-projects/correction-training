@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<simplicite elements="1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.simplicite.fr/base" xsi:schemaLocation="http://www.simplicite.fr/base https://www.simplicite.io/resources/schemas/base.xsd">
+<object>
+	<name>CrosstabAxis</name>
+	<action>upsert</action>
+	<data>
+		<cax_crosstab_id.ctb_name>TrnTcOrders</cax_crosstab_id.ctb_name>
+		<cax_objfield_id.obf_object_id.obo_name>TrnOrder</cax_objfield_id.obf_object_id.obo_name>
+		<cax_objfield_id.obf_order>110</cax_objfield_id.obf_order>
+		<cax_objfield_id.obf_field_id.fld_name>trnPrdReference</cax_objfield_id.obf_field_id.fld_name>
+		<cax_type>C</cax_type>
+		<cax_order>10</cax_order>
+		<cax_function/>
+		<cax_chart/>
+		<cax_precision/>
+		<cax_subtotal>0</cax_subtotal>
+		<cax_formula/>
+		<cax_hidden>0</cax_hidden>
+		<cax_dategroup/>
+		<row_module_id.mdl_name>Training</row_module_id.mdl_name>
+		<cax_unitscale/>
+		<cax_unitfunct/>
+		<cax_unitlabel/>
+		<cax_yaxis>L</cax_yaxis>
+		<cax_palette/>
+	</data>
+</object>
+</simplicite>

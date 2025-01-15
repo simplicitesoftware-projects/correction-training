@@ -74,13 +74,22 @@ Supplier
 | `trnOrdNumber`                                               | char(100)                                | yes*     | yes       |          | -                                                                                |
 | `trnOrdQuantity`                                             | int(100)                                 | yes      | yes       |          | -                                                                                |
 | `trnOrdDate`                                                 | datetime                                 |          | yes       |          | -                                                                                |
-| `trnOrdPrdId` link to **`TrnProduct`**                       | id                                       |          | yes       |          | -                                                                                |
+| `trnOrdPrdId` link to **`TrnProduct`**                       | id                                       | yes      | yes       |          | -                                                                                |
 | _Ref. `trnOrdPrdId.trnPrdReference`_                         | _char(100)_                              |          |           |          | -                                                                                |
 | _Ref. `trnOrdPrdId.trnPrdPrice`_                             | _float(100, 2)_                          |          |           |          | -                                                                                |
 | _Ref. `trnOrdPrdId.trnPrdStock`_                             | _int(100)_                               |          |           |          | -                                                                                |
 | _Ref. `trnOrdPrdId.trnPrdName`_                              | _char(100)_                              |          |           |          | -                                                                                |
 | _Ref. `trnOrdPrdId.trnPrdPicture`_                           | _image_                                  |          |           |          | -                                                                                |
-| `trnOrdCliId` link to **`TrnClient`**                        | id                                       |          | yes       |          | -                                                                                |
+| `trnOrdCliId` link to **`TrnClient`**                        | id                                       | yes      | yes       |          | -                                                                                |
 | _Ref. `trnOrdCliId.trnCliFirstname`_                         | _char(100)_                              |          |           |          | -                                                                                |
 | _Ref. `trnOrdCliId.trnCliLastname`_                          | _char(100)_                              |          |           |          | -                                                                                |
+| `trnOrdState`                                                | enum(20) using `TRN_ORD_STATE` list      | yes      | yes       |          | -                                                                                |
+
+### Lists
+
+* `TRN_ORD_STATE`
+    - `PROCESSING` Processing
+    - `VALIDATED` Validated
+    - `CANCELED` Canceled
+    - `SENT` Sent
 

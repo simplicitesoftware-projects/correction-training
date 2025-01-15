@@ -952,6 +952,18 @@ paths:
         type: boolean
         required: false
       - in: query
+        name: _crosstab
+        description: Apply pivot table
+        type: string
+        required: false
+        enum:
+        - TrnTcOrders
+      - in: query
+        name: _crosstabcubes
+        description: Pivot table data as cubes?
+        type: boolean
+        required: false
+      - in: query
         name: trnOrdNumber
         description: Search filter for Number
         type: string
@@ -1011,6 +1023,16 @@ paths:
         description: Search filter for Client Lastname
         type: string
         required: false
+      - in: query
+        name: trnOrdState
+        description: Search filter for State
+        type: string
+        required: false
+        enum:
+        - PROCESSING
+        - VALIDATED
+        - CANCELED
+        - SENT
       tags:
       - TrnOrder
   /:
@@ -1198,6 +1220,14 @@ definitions:
       trnOrdNumber:
         description: Number
         type: string
+      trnOrdState:
+        description: State
+        type: string
+        enum:
+        - PROCESSING
+        - VALIDATED
+        - CANCELED
+        - SENT
       trnOrdPrdId:
         description: Product
         type: string

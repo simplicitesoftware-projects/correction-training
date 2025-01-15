@@ -8,14 +8,17 @@
 		<ofa_position>1</ofa_position>
 		<ofa_title>1</ofa_title>
 		<ofa_ui><![CDATA[<div class="row">
-  <div class="col-sm-4">
+  <div class="col-sm-3">
     <div class="field" data-field="trnOrdNumber"></div>
   </div>
-  <div class="col-sm-4">
+  <div class="col-sm-3">
     <div class="field" data-field="trnOrdQuantity"></div>
   </div>
-  <div class="col-sm-4">
+  <div class="col-sm-3">
     <div class="field" data-field="trnOrdDate"></div>
+  </div>
+  <div class="col-sm-3">
+    <div class="field" data-field="trnOrdState"></div>
   </div>
 </div>]]></ofa_ui>
 		<ofa_icon><![CDATA[[EXPR:[OBJECTICON:TrnOrder]]]]></ofa_icon>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<simplicite elements="1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.simplicite.fr/base" xsi:schemaLocation="http://www.simplicite.fr/base https://www.simplicite.io/resources/schemas/base.xsd">
+<object>
+	<name>BPMStateTransition</name>
+	<action>upsert</action>
+	<data>
+		<stm_name>TRN_ORD_STATE-CANCELED-PROCESSING</stm_name>
+		<stm_from_id.sta_state_id.lov_list_id.lov_name>TRN_ORD_STATE</stm_from_id.sta_state_id.lov_list_id.lov_name>
+		<stm_from_id.sta_state_id.lov_code>CANCELED</stm_from_id.sta_state_id.lov_code>
+		<stm_to_id.sta_state_id.lov_list_id.lov_name>TRN_ORD_STATE</stm_to_id.sta_state_id.lov_list_id.lov_name>
+		<stm_to_id.sta_state_id.lov_code>PROCESSING</stm_to_id.sta_state_id.lov_code>
+		<stm_callbackscript/>
+		<stm_callback/>
+		<stm_condition/>
+		<stm_activ>1</stm_activ>
+		<stm_notif_id.alt_name/>
+		<stm_action_id.act_name/>
+		<row_module_id.mdl_name>Training</row_module_id.mdl_name>
+	</data>
+</object>
+</simplicite>
