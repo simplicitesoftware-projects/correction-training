@@ -1,5 +1,5 @@
 {
-    "date": "2025-01-15 10:33:28",
+    "date": "2025-01-15 10:50:30",
     "name": "Training",
     "format": "xml",
     "files": ["configuration/**.xml"],
