@@ -13,6 +13,7 @@
   <div class="field" data-field="trnSupPhone"></div>
   <div class="field" data-field="trnSupLogo"></div>
   <div class="field" data-field="trnSupWeb"></div>
+  <div class="field" data-field="trnComment"></div>
 </div>]]></ofa_ui>
 		<ofa_icon>star</ofa_icon>
 		<row_module_id.mdl_name>Training</row_module_id.mdl_name>

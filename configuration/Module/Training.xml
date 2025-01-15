@@ -7,7 +7,10 @@
 		<mdl_name>Training</mdl_name>
 		<mdl_version>1</mdl_version>
 		<mdl_prefix>trn</mdl_prefix>
-		<mdl_url/>
+		<mdl_url><![CDATA[{
+	"type": "git",
+	"origin": { "uri": "https://github.com/simplicitesoftware-projects/correction-training" }
+}]]></mdl_url>
 		<mdl_type>A</mdl_type>
 		<mdl_comment><![CDATA[Training module]]></mdl_comment>
 	</data>

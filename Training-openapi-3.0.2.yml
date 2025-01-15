@@ -41,6 +41,9 @@ components:
         trnSupPhone:
           description: Phone
           type: string
+        trnComment:
+          description: Comment
+          type: string
     ArrayOfTrnSupplier:
       type: array
       items:
@@ -98,6 +101,9 @@ components:
           type: string
         trnPrdSupId__trnSupName:
           description: Supplier Name
+          type: string
+        trnComment:
+          description: Comment
           type: string
     PublicationResult:
       type: object
@@ -341,6 +347,12 @@ paths:
         in: query
         name: trnSupWeb
         description: Search filter for Web
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: trnComment
+        description: Search filter for Comment
         required: false
       tags:
       - TrnSupplier
@@ -668,6 +680,12 @@ paths:
         in: query
         name: trnPrdSupId__trnSupName
         description: Search filter for Supplier Name
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: trnComment
+        description: Search filter for Comment
         required: false
       tags:
       - TrnProduct

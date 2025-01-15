@@ -14,6 +14,7 @@
   <div class="field" data-field="trnPrdName"></div>
   <div class="field" data-field="trnPrdDescription"></div>
   <div class="field" data-field="trnPrdPicture"></div>
+  <div class="field" data-field="trnComment"></div>
 </div>]]></ofa_ui>
 		<ofa_icon>star</ofa_icon>
 		<row_module_id.mdl_name>Training</row_module_id.mdl_name>

@@ -27,6 +27,7 @@ Supplier
 | `trnSupPhone`                                                | phone(100)                               |          | yes       |          | -                                                                                |
 | `trnSupLogo`                                                 | image                                    |          | yes       |          | -                                                                                |
 | `trnSupWeb`                                                  | url(100)                                 |          | yes       |          | -                                                                                |
+| `trnComment`                                                 | text(1000)                               |          | yes       |          | -                                                                                |
 
 `TrnProduct` business object definition
 ---------------------------------------
@@ -46,6 +47,7 @@ Supplier
 | `trnPrdSupId` link to **`TrnSupplier`**                      | id                                       |          | yes       |          | -                                                                                |
 | _Ref. `trnPrdSupId.trnSupCode`_                              | _char(100)_                              |          |           |          | -                                                                                |
 | _Ref. `trnPrdSupId.trnSupName`_                              | _char(100)_                              |          |           |          | -                                                                                |
+| `trnComment`                                                 | text(1000)                               |          | yes       |          | -                                                                                |
 
 `TrnClient` business object definition
 --------------------------------------

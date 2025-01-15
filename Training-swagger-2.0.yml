@@ -68,6 +68,11 @@ paths:
         description: Search filter for Web
         type: string
         required: false
+      - in: query
+        name: trnComment
+        description: Search filter for Comment
+        type: string
+        required: false
       tags:
       - TrnSupplier
   /login:
@@ -341,6 +346,11 @@ paths:
       - in: query
         name: trnPrdSupId__trnSupName
         description: Search filter for Supplier Name
+        type: string
+        required: false
+      - in: query
+        name: trnComment
+        description: Search filter for Comment
         type: string
         required: false
       tags:
@@ -1102,6 +1112,9 @@ definitions:
       trnSupPhone:
         description: Phone
         type: string
+      trnComment:
+        description: Comment
+        type: string
   ArrayOfTrnSupplier:
     type: array
     items:
@@ -1159,6 +1172,9 @@ definitions:
         type: string
       trnPrdSupId__trnSupName:
         description: Supplier Name
+        type: string
+      trnComment:
+        description: Comment
         type: string
   PublicationResult:
     type: object
