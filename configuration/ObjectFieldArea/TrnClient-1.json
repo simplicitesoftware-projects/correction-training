@@ -1,0 +1,8 @@
+{
+ "ofa_name": "TrnClient-1",
+ "ofa_position": 1,
+ "ofa_title": false,
+ "ofa_ui": "<div>\n  <div class=\"field\" data-field=\"trnCliFirstname\"><\/div>\n  <div class=\"field\" data-field=\"trnCliLastname\"><\/div>\n  <div class=\"field\" data-field=\"trnCliMail\"><\/div>\n  <div class=\"field\" data-field=\"trnCliPhone\"><\/div>\n  <div class=\"field\" data-field=\"trnCliAddress\"><\/div>\n<\/div>",
+ "ofa_icon": "star",
+ "row_module_id__mdl_name": "Training"
+}

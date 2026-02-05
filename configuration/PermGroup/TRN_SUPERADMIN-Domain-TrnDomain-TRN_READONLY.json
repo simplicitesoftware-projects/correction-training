@@ -1,0 +1,13 @@
+{
+ "pmg_group_id__grp_name": "TRN_READONLY",
+ "pmg_perm_id__prm_group_id__grp_name": "TRN_SUPERADMIN",
+ "pmg_perm_id__prm_object": {
+  "object": "Domain",
+  "label": "Domain",
+  "userkeylabel": "TrnDomain",
+  "icon": "img/system/domain",
+  "item": {"obd_name": "TrnDomain"}
+ },
+ "pmg_perm_id__prm_prop": null,
+ "row_module_id__mdl_name": "Training"
+}

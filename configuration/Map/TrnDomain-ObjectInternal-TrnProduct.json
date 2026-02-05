@@ -1,0 +1,13 @@
+{
+ "map_domain_id__obd_name": "TrnDomain",
+ "map_object": {
+  "object": "ObjectInternal",
+  "label": "Business object",
+  "userkeylabel": "TrnProduct",
+  "icon": "img/system/business_object",
+  "item": {"obo_name": "TrnProduct"}
+ },
+ "map_order": 1010,
+ "map_ext": false,
+ "row_module_id__mdl_name": "Training"
+}

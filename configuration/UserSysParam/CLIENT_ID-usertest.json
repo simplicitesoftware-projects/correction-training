@@ -1,0 +1,6 @@
+{
+ "usp_user_id__usr_login": "usertest",
+ "usp_param_id__sys_code": "CLIENT_ID",
+ "usp_value": "[{\n \"dt\": \"2025-01-14 18:45:45\",\n \"ag\": \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:133.0) Gecko/20100101 Firefox/133.0\",\n \"id\": \"syas5bib3q285sd5m6ht4ijdssfal7ibxzipyy93xxvlpfz1e3l8lc9hziwnfj9b1736761987999\"\n}]",
+ "row_module_id__mdl_name": "Training"
+}

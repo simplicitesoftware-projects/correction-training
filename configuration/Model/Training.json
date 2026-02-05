@@ -1,0 +1,16 @@
+{
+ "mod_name": "Training",
+ "mod_template_id__mtp_name": "ModelBusinessObject",
+ "mod_json": null,
+ "mod_doc": {
+  "path": "files/Model/Training.svg",
+  "mime": "image/svg+xml",
+  "name": "Training.svg"
+ },
+ "mod_image": {
+  "path": "files/Model/Training.png",
+  "mime": "image/png",
+  "name": "Training.png"
+ },
+ "row_module_id__mdl_name": "Training"
+}

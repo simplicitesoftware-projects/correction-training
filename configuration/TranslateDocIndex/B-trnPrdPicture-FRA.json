@@ -1,0 +1,12 @@
+{
+ "tsl_object": {
+  "object": "DocIndex",
+  "label": "Bookshelf",
+  "userkeylabel": "B-trnPrdPicture",
+  "icon": "img/system/bookshelf",
+  "item": {"din_name": "B-trnPrdPicture"}
+ },
+ "tsl_lang": "FRA",
+ "tsl_value": "B-trn prd picture",
+ "row_module_id__mdl_name": "Training"
+}

@@ -1,0 +1,6 @@
+{
+ "usp_user_id__usr_login": "usertest",
+ "usp_param_id__sys_code": "SCOPE_PREFS",
+ "usp_value": "TrainingScope",
+ "row_module_id__mdl_name": "Training"
+}

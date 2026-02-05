@@ -1,0 +1,13 @@
+{
+ "tsl_object": {
+  "object": "View",
+  "label": "View",
+  "userkeylabel": "TrainingScope",
+  "icon": "img/system/view",
+  "item": {"viw_name": "TrainingScope"}
+ },
+ "tsl_lang": "ENU",
+ "tsl_value": "Training scope",
+ "tsl_help": null,
+ "row_module_id__mdl_name": "Training"
+}

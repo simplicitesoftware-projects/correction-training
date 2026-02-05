@@ -1,0 +1,14 @@
+{
+ "tsl_object": {
+  "object": "ObjectInternal",
+  "label": "Business object",
+  "userkeylabel": "TrnSupplier",
+  "icon": "img/system/business_object",
+  "item": {"obo_name": "TrnSupplier"}
+ },
+ "tsl_lang": "ENU",
+ "tsl_value": "Supplier",
+ "tsl_plural_value": "Suppliers",
+ "tsl_help": null,
+ "row_module_id__mdl_name": "Training"
+}

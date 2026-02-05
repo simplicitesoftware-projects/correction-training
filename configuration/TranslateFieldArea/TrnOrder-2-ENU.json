@@ -1,0 +1,12 @@
+{
+ "tsl_object": {
+  "object": "ObjectFieldArea",
+  "label": "Fields area",
+  "userkeylabel": "TrnOrder-2",
+  "icon": "img/system/field_area",
+  "item": {"ofa_name": "TrnOrder-2"}
+ },
+ "tsl_lang": "ENU",
+ "tsl_value": "Product",
+ "row_module_id__mdl_name": "Training"
+}

@@ -1,0 +1,13 @@
+{
+ "tsl_object": {
+  "object": "Action",
+  "label": "Action",
+  "userkeylabel": "IncreaseStock",
+  "icon": "img/system/action_btn",
+  "item": {"act_name": "IncreaseStock"}
+ },
+ "tsl_lang": "FRA",
+ "tsl_value": "Increase stock",
+ "tsl_simplehelp": null,
+ "row_module_id__mdl_name": "Training"
+}
