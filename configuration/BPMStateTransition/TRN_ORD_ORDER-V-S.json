@@ -1,0 +1,14 @@
+{
+ "stm_name": "TRN_ORD_ORDER-V-S",
+ "stm_from_id__sta_state_id__lov_list_id__lov_name": "TRN_ORD_STATE",
+ "stm_from_id__sta_state_id__lov_code": "V",
+ "stm_to_id__sta_state_id__lov_list_id__lov_name": "TRN_ORD_STATE",
+ "stm_to_id__sta_state_id__lov_code": "S",
+ "stm_callbackscript": null,
+ "stm_callback": null,
+ "stm_condition": null,
+ "stm_activ": true,
+ "stm_notif_id__alt_name": null,
+ "stm_action_id__act_name": "TRN_ORD_ORDER-V-S",
+ "row_module_id__mdl_name": "Training"
+}

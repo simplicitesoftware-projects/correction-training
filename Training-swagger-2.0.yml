@@ -977,26 +977,6 @@ paths:
         type: string
         required: false
       - in: query
-        name: trnOrdPrdId__trnPrdPrice
-        description: Search filter for Product Price
-        type: number
-        required: false
-      - in: query
-        name: trnOrdPrdId__trnPrdStock
-        description: Search filter for Product Stock
-        type: integer
-        required: false
-      - in: query
-        name: trnOrdPrdId__trnPrdName
-        description: Search filter for Product Name
-        type: string
-        required: false
-      - in: query
-        name: trnOrdPrdId__trnPrdPicture
-        description: Search filter for Product Picture
-        type: string
-        required: false
-      - in: query
         name: trnOrdPrdId__trnPrdSupId
         description: Search filter for Product Supplier
         type: string
@@ -1021,6 +1001,16 @@ paths:
         description: Search filter for Client Last Name
         type: string
         required: false
+      - in: query
+        name: trnOrdState
+        description: Search filter for State
+        type: string
+        required: false
+        enum:
+        - P
+        - C
+        - V
+        - S
       tags:
       - TrnOrder
   /:
@@ -1223,43 +1213,6 @@ definitions:
     description: Order
     type: object
     properties:
-      trnOrdPrdId__trnPrdStock:
-        description: Product Stock
-        type: integer
-      trnOrdPrdId__trnPrdPicture:
-        description: Product Picture
-        type: object
-      trnOrdPrdId__trnPrdPrice:
-        description: Product Price
-        type: number
-      trnOrdDate:
-        description: Date
-        type: string
-        maxLength: 10
-        example: yyyy-MM-dd
-      trnOrdPrdId__trnPrdSupId__trnSupCode:
-        description: Product Supplier Code
-        type: string
-        maxLength: 100
-      trnOrdNumber:
-        description: Number
-        type: string
-        maxLength: 100
-      trnOrdPrdId:
-        description: Product
-        type: string
-        maxLength: 11
-      trnOrdCliId:
-        description: Client
-        type: string
-        maxLength: 11
-      trnOrdQuantity:
-        description: Quantity
-        type: integer
-      trnOrdPrdId__trnPrdName:
-        description: Product Name
-        type: string
-        maxLength: 100
       trnOrdPrdId__trnPrdReference:
         description: Product Reference
         type: string
@@ -1272,14 +1225,47 @@ definitions:
         description: Client First Name
         type: string
         maxLength: 100
+      trnOrdDate:
+        description: Date
+        type: string
+        maxLength: 19
+        example: yyyy-MM-dd HH:mm:ss
       trnOrdCliId__trnCliLastname:
         description: Client Last Name
+        type: string
+        maxLength: 100
+      trnOrdPrdId__trnPrdSupId__trnSupCode:
+        description: Product Supplier Code
         type: string
         maxLength: 100
       row_id:
         description: Unique technical row ID
         type: string
         maxLength: 11
+      trnOrdNumber:
+        description: Number
+        type: string
+        maxLength: 100
+      trnOrdState:
+        description: State
+        type: string
+        maxLength: 100
+        enum:
+        - P
+        - C
+        - V
+        - S
+      trnOrdPrdId:
+        description: Product
+        type: string
+        maxLength: 11
+      trnOrdCliId:
+        description: Client
+        type: string
+        maxLength: 11
+      trnOrdQuantity:
+        description: Quantity
+        type: integer
   ActionResult:
     description: Action result
     type: object

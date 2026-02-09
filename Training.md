@@ -42,15 +42,20 @@ Training module
 | `trnOrdDate`                                                 | datetime                                 |          | yes       |          | -                                                                                |
 | `trnOrdPrdId` link to **`TrnProduct`**                       | id                                       |          | yes       |          | -                                                                                |
 | _Ref. `trnOrdPrdId.trnPrdReference`_                         | _char(100)_                              |          |           |          | -                                                                                |
-| _Ref. `trnOrdPrdId.trnPrdPrice`_                             | _float(100, 2)_                          |          |           |          | -                                                                                |
-| _Ref. `trnOrdPrdId.trnPrdStock`_                             | _int(100)_                               |          |           |          | -                                                                                |
-| _Ref. `trnOrdPrdId.trnPrdName`_                              | _char(100)_                              |          |           |          | -                                                                                |
-| _Ref. `trnOrdPrdId.trnPrdPicture`_                           | _image_                                  |          |           |          | -                                                                                |
 | _Ref. `trnOrdPrdId.trnPrdSupId`_                             | _id_                                     |          |           |          | -                                                                                |
 | _Ref. `trnPrdSupId.trnSupCode`_                              | _char(100)_                              |          |           |          | -                                                                                |
 | `trnOrdCliId` link to **`TrnClient`**                        | id                                       |          | yes       |          | -                                                                                |
 | _Ref. `trnOrdCliId.trnCliFirstname`_                         | _char(100)_                              |          |           |          | -                                                                                |
 | _Ref. `trnOrdCliId.trnCliLastname`_                          | _char(100)_                              |          |           |          | -                                                                                |
+| `trnOrdState`                                                | enum(100) using `TRN_ORD_STATE` list     | yes      | yes       |          | -                                                                                |
+
+### Lists
+
+* `TRN_ORD_STATE`
+    - `P` Pending
+    - `C` Canceled
+    - `V` Validated
+    - `S` Shipped
 
 `TrnProduct` business object definition
 ---------------------------------------

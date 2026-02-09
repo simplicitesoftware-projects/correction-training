@@ -1,0 +1,13 @@
+{
+ "tsl_object": {
+  "object": "Action",
+  "label": "Action",
+  "userkeylabel": "TRN_ORD_ORDER-C-P",
+  "icon": "img/system/action_btn",
+  "item": {"act_name": "TRN_ORD_ORDER-C-P"}
+ },
+ "tsl_lang": "ENU",
+ "tsl_value": "Back to Pending",
+ "tsl_simplehelp": null,
+ "row_module_id__mdl_name": "Training"
+}
